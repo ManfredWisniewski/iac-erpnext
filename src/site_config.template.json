@@ -1,0 +1,8 @@
+{
+  "mute_emails": true,
+  "deny_multiple_sessions": false,
+  "allow_error_traceback": true,
+  "disable_system_update_notification": true,
+  "backup_limit": 3,
+  "developer_mode": 0
+}

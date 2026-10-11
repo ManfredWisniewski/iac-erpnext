@@ -1,0 +1,13 @@
+[
+ {
+  "doctype": "Letter Head",
+  "name": "WIT Standard",
+  "letter_head_name": "WIT Standard",
+  "source": "HTML",
+  "content": "<div class=\"letter-head\"><h3>WIT</h3></div>",
+  "footer_source": "HTML",
+  "footer": "",
+  "is_default": 0,
+  "disabled": 0
+ }
+]

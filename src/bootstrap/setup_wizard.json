@@ -1,0 +1,17 @@
+{
+  "language": "English",
+  "country": "Germany",
+  "timezone": "Europe/Berlin",
+  "currency": "EUR",
+  "full_name": "Administrator",
+  "email": "admin@wit.internal",
+  "password": "<ENV:ERPNEXT_ADMIN_PASSWORD>",
+  "company_name": "WIT",
+  "company_abbr": "WIT",
+  "company_tagline": "",
+  "bank_account": "Bank",
+  "chart_of_accounts": "SKR03",
+  "fy_start_date": "2026-01-01",
+  "fy_end_date": "2026-12-31",
+  "domains": ["Services"]
+}

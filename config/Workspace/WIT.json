@@ -1,0 +1,19 @@
+[
+ {
+  "doctype": "Workspace",
+  "name": "WIT",
+  "label": "WIT",
+  "title": "WIT",
+  "public": 1,
+  "module": "Wit",
+  "icon": "folder",
+  "indicator_color": "blue",
+  "content": "[]",
+  "links": [],
+  "charts": [],
+  "shortcuts": [],
+  "quick_lists": [],
+  "number_cards": [],
+  "custom_blocks": []
+ }
+]

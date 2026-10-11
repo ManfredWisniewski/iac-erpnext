@@ -1,0 +1,20 @@
+[
+ {
+  "doctype": "System Settings",
+  "name": "System Settings",
+  "language": "en",
+  "country": "Germany",
+  "time_zone": "Europe/Berlin",
+  "date_format": "dd.mm.yyyy",
+  "time_format": "HH:mm",
+  "number_format": "#.###,##",
+  "float_precision": "2",
+  "first_day_of_the_week": "Monday",
+  "session_expiry": "06:00",
+  "deny_multiple_sessions": 0,
+  "allow_guest_to_upload": 0,
+  "allow_error_traceback": 1,
+  "disable_system_update_notification": 1,
+  "backup_limit": 3
+ }
+]

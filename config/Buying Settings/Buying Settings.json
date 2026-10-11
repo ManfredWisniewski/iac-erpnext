@@ -1,0 +1,11 @@
+[
+ {
+  "doctype": "Buying Settings",
+  "name": "Buying Settings",
+  "supp_master_name": "Supplier Name",
+  "po_required": "No",
+  "pr_required": "No",
+  "maintain_same_rate": 0,
+  "allow_editing_of_rate_in_material_request": 1
+ }
+]

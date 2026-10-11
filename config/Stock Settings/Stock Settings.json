@@ -1,0 +1,12 @@
+[
+ {
+  "doctype": "Stock Settings",
+  "name": "Stock Settings",
+  "item_naming_by": "Item Code",
+  "valuation_method": "FIFO",
+  "auto_indent": 1,
+  "allow_negative_stock": 0,
+  "show_barcode_field": 0,
+  "clean_description_html": 0
+ }
+]

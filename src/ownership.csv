@@ -1,0 +1,55 @@
+# DocType ownership matrix (D03). Drives erpnext_apply.py L4 ordering and
+# erpnext_export.py drift detection. Columns:
+#   doctype       — DocType name as exported (config/<doctype>/ dir name)
+#   owner         — git: declared in this repo, UI edits overwritten
+#                   ui: managed in Desk, excluded from exports
+#                   data: business/transactional data, never exported
+#   export        — fixtures | export-json | none
+#   apply_order   — L4 import-doc order, parents before children (export-json only)
+#   secret_fields — ';'-separated top-level fields masked on export and set
+#                   post-import via frappe.client.set_value (D04)
+doctype,owner,export,apply_order,secret_fields
+#
+# L4 — Singles (name == doctype), applied first, no record dependencies
+System Settings,git,export-json,10,
+Selling Settings,git,export-json,10,
+Buying Settings,git,export-json,10,
+Stock Settings,git,export-json,10,
+Accounts Settings,git,export-json,10,
+#
+# L4 — named records, parents before children
+Letter Head,git,export-json,20,
+Role Profile,git,export-json,20,
+Email Account,git,export-json,30,password
+Workspace,git,export-json,40,
+Notification,git,export-json,50,
+Webhook,git,export-json,50,
+#
+# L3 — applied by bench migrate (fixtures lane), order inside app/wit/wit/fixtures
+Workflow State,git,fixtures,,
+Workflow Action Master,git,fixtures,,
+Workflow,git,fixtures,,
+Custom Field,git,fixtures,,
+Property Setter,git,fixtures,,
+Print Format,git,fixtures,,
+Client Script,git,fixtures,,
+Server Script,git,fixtures,,
+Email Template,git,fixtures,,
+#
+# created by L1 bootstrap — owned by the wizard, not by config/
+Company,data,none,,
+Fiscal Year,data,none,,
+#
+# data — business/transactional, never Git
+User,data,none,,
+Customer,data,none,,
+Supplier,data,none,,
+Item,data,none,,
+Sales Invoice,data,none,,
+Sales Order,data,none,,
+Purchase Order,data,none,,
+Payment Entry,data,none,,
+Stock Entry,data,none,,
+File,data,none,,
+Activity Log,data,none,,
+Error Log,data,none,,

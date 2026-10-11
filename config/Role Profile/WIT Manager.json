@@ -1,0 +1,21 @@
+[
+ {
+  "doctype": "Role Profile",
+  "name": "WIT Manager",
+  "role_profile": "WIT Manager",
+  "roles": [
+   {
+    "doctype": "Has Role",
+    "role": "Sales Manager"
+   },
+   {
+    "doctype": "Has Role",
+    "role": "Purchase Manager"
+   },
+   {
+    "doctype": "Has Role",
+    "role": "Accounts Manager"
+   }
+  ]
+ }
+]

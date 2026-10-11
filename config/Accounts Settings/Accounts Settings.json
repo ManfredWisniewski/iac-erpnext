@@ -1,0 +1,12 @@
+[
+ {
+  "doctype": "Accounts Settings",
+  "name": "Accounts Settings",
+  "frozen_accounts_modifier": "Accounts Manager",
+  "determine_address_tax_category_from": "Billing Address",
+  "over_billing_allowance": 0,
+  "auto_exchange_rate_revaluation": 1,
+  "book_asset_depreciation_entry_automatically": 1,
+  "unlink_payment_on_cancellation_of_invoice": 0
+ }
+]

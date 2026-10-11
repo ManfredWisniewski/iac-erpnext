@@ -1,0 +1,24 @@
+# Proposal for aedar — host_vars/devansible.wit/vars.yml (plan P1 + P4a).
+# Apply there, not here; a human runs devansible-docker_apps.yml afterwards.
+#
+# P1 — stack up. wit_generate_secrets:true (already set) scaffolds
+# host_vars/devansible.wit/vault_erpnext.yml with erpnext_db_root_password +
+# erpnext_admin_password; encrypt the vault file, then re-run the play.
+erpnext_install: "once"
+erpnext_host: "erpnext.devansible.wit"
+erpnext_sites_path: "/opt/containers/erpnext/sites"
+erpnext_logs_path: "/opt/containers/erpnext/logs"
+erpnext_db_data_path: "/opt/containers/erpnext/mariadb"
+erpnext_redis_queue_path: "/opt/containers/erpnext/redis-queue"
+erpnext_admin_password: "{{ vault_erpnext_admin_password }}"
+erpnext_db_root_password: "{{ vault_erpnext_db_root_password }}"
+
+# P4 (a) — bind-mount the wit app from the on-host clone of this repo into
+# the bench apps dir. NEEDS a small role change in wit.docker_apps:
+# templates/erpnext-compose.yml.j2 must add
+#   {{ erpnext_app_sources }} mounts to backend/queue-*/scheduler services
+#   (each entry rendered as "<src>:<dest>" volume), then sites/apps.txt is
+#   refreshed like the germany/hrms tasks do.
+# erpnext_app_sources:
+#   - src: "/opt/iac-erpnext/app/wit"
+#     dest: "/home/frappe/frappe-bench/apps/wit"

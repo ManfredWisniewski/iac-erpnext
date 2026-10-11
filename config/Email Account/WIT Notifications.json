@@ -1,0 +1,23 @@
+[
+ {
+  "doctype": "Email Account",
+  "name": "WIT Notifications",
+  "email_account_name": "WIT Notifications",
+  "email_id": "notifications@example.invalid",
+  "service": "",
+  "enable_outgoing": 0,
+  "default_outgoing": 0,
+  "enable_incoming": 0,
+  "default_incoming": 0,
+  "smtp_server": "smtp.example.invalid",
+  "smtp_port": "587",
+  "use_tls": 1,
+  "use_ssl": 0,
+  "use_imap": 0,
+  "login_id_is_different": 0,
+  "no_smtp_authentication": 0,
+  "awaiting_password": 1,
+  "password": "<ENV:ERPNEXT_SMTP_PASSWORD>",
+  "append_to": ""
+ }
+]

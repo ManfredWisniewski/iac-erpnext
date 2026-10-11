@@ -1,0 +1,16 @@
+[project]
+name = "wit"
+authors = [
+    { name = "WIT", email = "dev@wit.invalid" }
+]
+description = "WIT customisations for ERPNext"
+requires-python = ">=3.10"
+readme = "README.md"
+dynamic = ["version"]
+dependencies = [
+    # "frappe~=16.0.0" — the bench pins frappe; the app itself adds no deps
+]
+
+[build-system]
+requires = ["flit_core >=3.4,<4"]
+build-backend = "flit_core.buildapi"
